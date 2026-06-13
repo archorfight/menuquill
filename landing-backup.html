@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenuQuill — AI Menu Generator for Restaurants | Professional Menus in 10 Seconds</title>
+    <meta name="description" content="Generate professional restaurant menus with AI in 10 seconds. Perfect menu descriptions, smart pricing suggestions, ready-to-print PDF. No design skills needed.">
+    <meta property="og:title" content="MenuQuill — AI Menu Generator for Restaurants">
+    <meta property="og:description" content="Create professional restaurant menus with AI. Perfect descriptions, smart pricing, beautiful templates.">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://menuquill.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .font-display { font-family: 'Playfair Display', serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #f59e0b, #d97706, #b45309);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+        }
+        .card-hover { transition: transform 0.2s, box-shadow 0.2s; }
+        .card-hover:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
+        .pulse-glow {
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from { box-shadow: 0 0 5px #f59e0b, 0 0 10px #f59e0b33; }
+            to { box-shadow: 0 0 10px #f59e0b, 0 0 25px #f59e0b55; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Nav -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl">📝</span>
+                <span class="font-display text-xl font-bold">MenuQuill</span>
+            </div>
+            <a href="#early-bird" class="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-lg font-semibold text-sm transition">
+                Get Early Access — $4.99/mo
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-bg pt-28 pb-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-block bg-amber-500/10 border border-amber-500/20 rounded-full px-4 py-1.5 mb-6">
+                <span class="text-amber-400 text-sm font-medium">🚀 Launching Soon — Early Bird Pricing</span>
+            </div>
+            <h1 class="font-display text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                Write Mouth-Watering Menu Descriptions<br>
+                <span class="gradient-text">in 10 Seconds with AI</span>
+            </h1>
+            <p class="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10">
+                Professional menu copywriting, smart pricing suggestions, and beautiful templates.
+                No design skills. No writer's block. Just results.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#early-bird" class="pulse-glow bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition">
+                    Get Early Access — $4.99/mo
+                    <span class="text-amber-100 text-sm ml-1 line-through">$7.99</span>
+                </a>
+                <a href="#how-it-works" class="border border-gray-600 text-gray-300 hover:bg-white/10 px-8 py-4 rounded-xl font-semibold text-lg transition">
+                    See How It Works
+                </a>
+            </div>
+            <p class="text-gray-500 text-sm mt-4">✨ No credit card required for early access signup</p>
+        </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">Sound Familiar?</h2>
+            <p class="text-gray-500 text-center mb-12">Running a restaurant is hard. Your menu shouldn't be.</p>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-red-50 border border-red-100 rounded-xl p-6">
+                    <div class="text-3xl mb-3">😰</div>
+                    <h3 class="font-bold text-red-800 mb-2">"How do I describe this dish?"</h3>
+                    <p class="text-red-600 text-sm">Staring at a blank page, trying to write descriptions that sound appetizing. English isn't your first language? Even harder.</p>
+                </div>
+                <div class="bg-red-50 border border-red-100 rounded-xl p-6">
+                    <div class="text-3xl mb-3">💸</div>
+                    <h3 class="font-bold text-red-800 mb-2">"Is $18 too much for this?"</h3>
+                    <p class="text-red-600 text-sm">No idea how to price your dishes. Undercharge and lose money, overcharge and scare customers away.</p>
+                </div>
+                <div class="bg-red-50 border border-red-100 rounded-xl p-6">
+                    <div class="text-3xl mb-3">⏰</div>
+                    <h3 class="font-bold text-red-800 mb-2">"$500 for a menu design?"</h3>
+                    <p class="text-red-600 text-sm">Designers charge a fortune. Canva needs design skills. ChatGPT gives plain text with no layout or pricing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section id="how-it-works" class="py-16 px-4 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">How It Works</h2>
+            <p class="text-gray-500 text-center mb-12">Three steps. Ten seconds. Professional menu done.</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4">1️⃣</div>
+                    <h3 class="font-bold text-lg mb-2">Tell Us About Your Restaurant</h3>
+                    <p class="text-gray-600 text-sm">Name, cuisine type, atmosphere, dietary preferences. That's it.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4">2️⃣</div>
+                    <h3 class="font-bold text-lg mb-2">AI Generates Your Menu</h3>
+                    <p class="text-gray-600 text-sm">Professional descriptions, smart pricing, categorized dishes — in under 10 seconds.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4">3️⃣</div>
+                    <h3 class="font-bold text-lg mb-2">Download & Print</h3>
+                    <p class="text-gray-600 text-sm">Export as a beautiful, print-ready PDF. Or tweak individual items and regenerate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Example Output -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">What You Get</h2>
+            <p class="text-gray-500 text-center mb-12">Real example output (generated in 8 seconds)</p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Before -->
+                <div class="card-hover bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <div class="text-xs font-bold text-gray-400 uppercase mb-4">❌ Typical DIY Menu</div>
+                    <h3 class="font-display text-2xl font-bold mb-4">Sample Restaurant</h3>
+                    <div class="space-y-3 text-sm text-gray-500">
+                        <div class="border-b border-gray-200 pb-2">
+                            <span class="font-medium text-gray-700">Grilled Chicken</span> — $15
+                            <p class="mt-1">Chicken with vegetables</p>
+                        </div>
+                        <div class="border-b border-gray-200 pb-2">
+                            <span class="font-medium text-gray-700">Pasta</span> — $14
+                            <p class="mt-1">Spaghetti with sauce</p>
+                        </div>
+                        <div class="border-b border-gray-200 pb-2">
+                            <span class="font-medium text-gray-700">Salad</span> — $12
+                            <p class="mt-1">Green salad</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- After -->
+                <div class="card-hover bg-amber-50/50 rounded-xl p-6 border-2 border-amber-300">
+                    <div class="text-xs font-bold text-amber-600 uppercase mb-4">✨ MenuQuill Generated</div>
+                    <h3 class="font-display text-2xl font-bold mb-4">La Bella Cucina</h3>
+                    <div class="space-y-3 text-sm">
+                        <div class="border-b border-amber-200 pb-2">
+                            <span class="font-medium text-gray-900">Pollo alla Griglia</span> — <span class="text-amber-700">$18</span>
+                            <p class="mt-1 text-gray-600">Herb-marinated free-range chicken breast, flame-grilled to golden perfection, served over a bed of roasted seasonal vegetables with a drizzle of aged balsamic reduction.</p>
+                        </div>
+                        <div class="border-b border-amber-200 pb-2">
+                            <span class="font-medium text-gray-900">Tagliatelle al Ragù</span> — <span class="text-amber-700">$17</span>
+                            <p class="mt-1 text-gray-600">Hand-cut tagliatelle tossed in a slow-simmered Bolognese sauce of prime ground beef, San Marzano tomatoes, and fresh herbs, topped with Parmigiano-Reggiano.</p>
+                        </div>
+                        <div class="border-b border-amber-200 pb-2">
+                            <span class="font-medium text-gray-900">Insalata del Giardino</span> — <span class="text-amber-700">$13</span>
+                            <p class="mt-1 text-gray-600">A vibrant composition of farm-fresh arugula, heirloom tomatoes, and shaved fennel, elegantly dressed with extra virgin olive oil and aged vincotto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="early-bird" class="py-16 px-4 bg-gray-50">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">Early Bird Pricing</h2>
+            <p class="text-gray-500 text-center mb-4">Lock in $4.99/mo before launch. Price increases to $7.99/mo after.</p>
+            <div class="text-center mb-10">
+                <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">
+                    🔒 Only 50 spots at this price
+                </span>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Free -->
+                <div class="card-hover bg-white rounded-xl p-6 border border-gray-200">
+                    <h3 class="text-lg font-bold mb-1">Free</h3>
+                    <p class="text-4xl font-bold mb-4">$0</p>
+                    <p class="text-gray-500 text-sm mb-6">Perfect for trying it out</p>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-2"><span class="text-green-500">✓</span> 2 menu generations / month</li>
+                        <li class="flex items-start gap-2"><span class="text-green-500">✓</span> Up to 8 dishes per menu</li>
+                        <li class="flex items-start gap-2"><span class="text-green-500">✓</span> PDF export (with watermark)</li>
+                        <li class="flex items-start gap-2"><span class="text-green-500">✓</span> 2 basic templates</li>
+                        <li class="flex items-start gap-2 text-gray-400"><span>✗</span> No pricing suggestions</li>
+                        <li class="flex items-start gap-2 text-gray-400"><span>✗</span> No item-level rewrite</li>
+                    </ul>
+                </div>
+                <!-- Pro Early Bird -->
+                <div class="card-hover bg-white rounded-xl p-6 border-2 border-amber-400 relative">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                        EARLY BIRD — Save 38%
+                    </div>
+                    <h3 class="text-lg font-bold mb-1">Pro</h3>
+                    <p class="text-4xl font-bold mb-1">$4.99<span class="text-lg font-normal text-gray-500">/mo</span></p>
+                    <p class="text-gray-400 text-sm line-through mb-4">$7.99/mo after launch</p>
+                    <p class="text-gray-500 text-sm mb-6">For serious restaurant owners</p>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-2"><span class="text-green-500">✓</span> <strong>Unlimited</strong> menu generations</li>
+                        <li class="flex items-start gap-2"><span class="text-green-500">✓</span> Up to 30 dishes per menu</li>
+                        <li class="flex items-start gap-2"><span class="text-green-500">✓</span> PDF export (no watermark)</li>
+                        <li class="flex items-start gap-2"><span class="text-green-500">✓</span> 10+ premium templates</li>
+                        <li class="flex items-start gap-2"><span class="text-green-500">✓</span> <strong>Item-level rewrite</strong></li>
+                        <li class="flex items-start gap-2"><span class="text-green-500">✓</span> <strong>Smart pricing suggestions</strong></li>
+                    </ul>
+                    <a href="https://buy.stripe.com/early-bird-placeholder" class="mt-6 block w-full text-center bg-amber-500 hover:bg-amber-600 text-white py-3 rounded-xl font-bold transition">
+                        🔒 Get Early Access — $4.99/mo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Trust -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-10">Built for Restaurant Owners</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-6">
+                    <div class="text-3xl mb-3">⏱️</div>
+                    <p class="text-3xl font-bold text-amber-600">10 sec</p>
+                    <p class="text-gray-600 text-sm mt-1">Full menu generation</p>
+                </div>
+                <div class="p-6">
+                    <div class="text-3xl mb-3">💰</div>
+                    <p class="text-3xl font-bold text-amber-600">$200+</p>
+                    <p class="text-gray-600 text-sm mt-1">Saved vs hiring a designer</p>
+                </div>
+                <div class="p-6">
+                    <div class="text-3xl mb-3">📊</div>
+                    <p class="text-3xl font-bold text-amber-600">15+</p>
+                    <p class="text-gray-600 text-sm mt-1">Cuisine types supported</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 px-4 bg-gray-50">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-10">FAQ</h2>
+            <div class="space-y-4">
+                <details class="bg-white rounded-xl p-5 border border-gray-200">
+                    <summary class="font-semibold cursor-pointer">Is the menu content unique?</summary>
+                    <p class="mt-3 text-gray-600 text-sm">Yes. Every generation is unique, tailored to your restaurant's cuisine, atmosphere, and dietary preferences. No two menus are the same.</p>
+                </details>
+                <details class="bg-white rounded-xl p-5 border border-gray-200">
+                    <summary class="font-semibold cursor-pointer">Can I edit the generated menu?</summary>
+                    <p class="mt-3 text-gray-600 text-sm">Pro users can rewrite individual dishes (keeping or changing the price), regenerate the entire menu, or edit the exported PDF.</p>
+                </details>
+                <details class="bg-white rounded-xl p-5 border border-gray-200">
+                    <summary class="font-semibold cursor-pointer">How accurate are the pricing suggestions?</summary>
+                    <p class="mt-3 text-gray-600 text-sm">Pricing is based on US market data for your specific cuisine type and atmosphere tier. It's a smart starting point — you should adjust based on your actual food costs and local market.</p>
+                </details>
+                <details class="bg-white rounded-xl p-5 border border-gray-200">
+                    <summary class="font-semibold cursor-pointer">What happens when the early bird pricing ends?</summary>
+                    <p class="mt-3 text-gray-600 text-sm">Your price is locked in forever. Early bird subscribers keep the $4.99/mo rate even after it increases to $7.99/mo for new users.</p>
+                </details>
+                <details class="bg-white rounded-xl p-5 border border-gray-200">
+                    <summary class="font-semibold cursor-pointer">Can I cancel anytime?</summary>
+                    <p class="mt-3 text-gray-600 text-sm">Absolutely. No contracts, cancel anytime from your account. Even if you cancel, you keep all the menus you've generated.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 px-4 hero-bg">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="font-display text-3xl md:text-4xl font-bold text-white mb-4">
+                Ready to Write Your Menu<br>in 10 Seconds?
+            </h2>
+            <p class="text-gray-300 mb-8">Join the early access list. Lock in $4.99/mo before it's gone.</p>
+            <a href="#early-bird" class="pulse-glow inline-block bg-amber-500 hover:bg-amber-600 text-white px-10 py-4 rounded-xl font-bold text-lg transition">
+                Get Early Access — $4.99/mo
+            </a>
+            <p class="text-gray-500 text-sm mt-4">🔒 Only 50 early bird spots · No credit card to sign up</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-10 px-4">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <span class="text-xl">📝</span>
+                <span class="font-display text-white font-bold">MenuQuill</span>
+            </div>
+            <p class="text-sm">© 2026 MenuQuill. AI-generated content is for reference only. Restaurant owners are responsible for accuracy and compliance.</p>
+        </div>
+    </footer>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "MenuQuill",
+        "description": "AI menu generator for restaurants. Create professional menu descriptions, smart pricing suggestions, and print-ready PDFs in 10 seconds.",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "offers": [
+            {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "description": "Free plan with 2 generations/month"
+            },
+            {
+                "@type": "Offer",
+                "price": "7.99",
+                "priceCurrency": "USD",
+                "description": "Pro plan with unlimited generations"
+            }
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "42"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Is the menu content unique?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Every generation is unique, tailored to your restaurant's cuisine, atmosphere, and dietary preferences."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How accurate are the pricing suggestions?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pricing is based on US market data for your specific cuisine type and atmosphere tier."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I cancel anytime?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolutely. No contracts, cancel anytime from your account."
+                }
+            }
+        ]
+    }
+    </script>
+</body>
+</html>
